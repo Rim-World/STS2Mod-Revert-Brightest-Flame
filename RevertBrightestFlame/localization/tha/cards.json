@@ -1,0 +1,4 @@
+{
+  "RE_BRIGHTEST_FLAME.description": "ได้รับ {Energy:energyIcons()}\nจั่วการ์ด {Cards:diff()} ใบ\nเสีย {MaxHp:diff()} HP สูงสุด",
+  "RE_BRIGHTEST_FLAME.title": "เพลิงที่โชติช่วงที่สุด"
+}

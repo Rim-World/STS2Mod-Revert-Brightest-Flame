@@ -1,0 +1,4 @@
+{
+  "RE_BRIGHTEST_FLAME.description": "Gagnez {Energy:energyIcons()}.\nPiochez {Cards:diff()} {Cards:plural:carte|cartes}.\nPerdez {MaxHp:diff()} PV Max.",
+  "RE_BRIGHTEST_FLAME.title": "Flamme éclatante"
+}

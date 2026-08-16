@@ -1,0 +1,4 @@
+{
+  "RE_BRIGHTEST_FLAME.description": "Receba {Energy:energyIcons()}.\nCompre {Cards:diff()} {Cards:plural:carta|cartas}.\nPerca {MaxHp:diff()} PV Máximo.",
+  "RE_BRIGHTEST_FLAME.title": "Chama Radiante"
+}

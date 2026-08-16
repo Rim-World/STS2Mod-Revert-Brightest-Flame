@@ -1,0 +1,4 @@
+{
+  "RE_BRIGHTEST_FLAME.description": "Дает {Energy:energyIcons()}.\nВы добираете {Cards:diff()} {Cards:plural(ru):карту|карты|карт}.\nВы теряете {MaxHp:diff()} максимальных ОЗ.",
+  "RE_BRIGHTEST_FLAME.title": "Ярчайшее пламя"
+}

@@ -1,0 +1,4 @@
+{
+  "RE_BRIGHTEST_FLAME.description": "Dapatkan {Energy:energyIcons()}.\nAmbil {Cards:diff()} {Cards:plural:kartu|kartu}.\n{MaxHp:diff()} HP Maksimal hilang.",
+  "RE_BRIGHTEST_FLAME.title": "Api Paling Terang"
+}
