@@ -1,0 +1,4 @@
+{
+  "BRIGHTEST_FLAME.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nLose {MaxHp:diff()} Max HP.",
+  "BRIGHTEST_FLAME.title": "Brightest Flame"
+}

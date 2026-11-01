@@ -1,0 +1,4 @@
+{
+  "BRIGHTEST_FLAME.description": "{Energy:energyIcons()} elde et.\n{Cards:diff()} {Cards:plural:kart|kart} çek.\n{MaxHp:diff()} Maksimum CP kaybet.",
+  "BRIGHTEST_FLAME.title": "En Parlak Alev"
+}

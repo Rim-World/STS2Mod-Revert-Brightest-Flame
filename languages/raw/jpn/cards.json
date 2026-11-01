@@ -1,0 +1,4 @@
+{
+  "BRIGHTEST_FLAME.description": "{Energy:energyIcons()}を得る。\nカードを{Cards:diff()}枚引く。\n最大HPを{MaxHp:diff()}失う。",
+  "BRIGHTEST_FLAME.title": "極光の炎"
+}

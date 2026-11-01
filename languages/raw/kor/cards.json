@@ -1,0 +1,4 @@
+{
+  "BRIGHTEST_FLAME.description": "{Energy:energyIcons()}를 얻습니다.\n카드를 {Cards:diff()}장 뽑습니다.\n최대 체력을 {MaxHp:diff()} 잃습니다.",
+  "BRIGHTEST_FLAME.title": "찬란한 불꽃"
+}

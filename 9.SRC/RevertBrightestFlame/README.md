@@ -1,0 +1,53 @@
+English | [中文](README.zh.md)
+
+# If you like this mod, welcome to check out my other mods. They might be helpful to you.
+
+## 1\. Effects
+
+Changes the Max HP lost each time the "Brightest Flame" card is played from 2 to 1 ( the original value in versions 0.99 to 0.110 ).
+
+All other effects remain unchanged: 0 cost, gain 2 Energy, draw 2 cards; on upgrade, Energy and card draw each increase by 1, and the Max HP loss remains 1.
+
+This mod works by modifying the original "Brightest Flame" card directly, rather than creating a new card and disabling the old one.
+
+## 2\. Impact (Based on My Understanding of the Game)
+
+The 0.111 update made Brightest Flame's cost too high, turning this option into almost a dead pick that is practically impossible to choose in most runs;
+
+Brightest Flame before 0.111, on the other hand, was an absurdly strong "fake card" beyond any normal tier.
+
+This mod affects save files: while the mod is enabled, "Brightest Flame" cards in historical records are displayed with the reverted values; disabling the mod restores the original state.
+
+## 3\. Environment & Version
+
+This mod does not depend on any base mod.
+
+This mod only supports version 0.111.0 and above; it does not support versions 0.110 and below, because in those versions Brightest Flame does not need to be reverted.
+
+When the game starts, the mod checks the game version and whether the Brightest Flame card exists in the game package; it disables itself automatically if the version is below 0.111.0 or if the Brightest Flame card has been removed.
+
+This mod does not check the game branch, so if the version number of the Default branch ever reaches 111, the mod will take effect automatically.
+
+In theory, as long as there are no major API updates or card changes, this mod should automatically adapt to new versions without any modification.
+
+## 4\. Implementation & Compatibility
+
+This mod is written with minimal dependencies, so under normal circumstances it is compatible with most mods and unlikely to break as the game version changes.
+
+This mod uses external patches to hard-code the card name, card text, and play effect of Brightest Flame to their pre-0.111 versions, while the card art is not hard-coded.
+
+However, compatibility is not guaranteed with pirated copies, modified versions, mobile versions, outdated versions, niche mods, or secondary mods.
+
+## 5\. Credits
+
+This mod was made with Deepseek Harness (WebUI) + DeepSeek V4 Flash (0731 GA). Thanks to Saint Liang.
+
+Thanks to the Slay the Spire 2 team for their efforts to make modding easier for players.
+
+Thanks to the Baselib developers for their documentation.
+
+## 6\. Open-Source Repository & Contact
+
+Open-source repository: https://github.com/Rim-World/STS2Mod-Revert-Brightest-Flame
+
+Feel free to leave your comments and feedback in the comment section.

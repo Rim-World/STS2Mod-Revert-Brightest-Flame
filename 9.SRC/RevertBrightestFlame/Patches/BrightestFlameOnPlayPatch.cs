@@ -8,9 +8,10 @@ using MegaCrit.Sts2.Core.Models.Cards;
 namespace RevertBrightestFlame.Patches;
 
 /// <summary>
-/// 打出行为写死：整体替换 BrightestFlame.OnPlay，
-/// 固定为 获得 2 点能量 → 抽 2 张牌 → 损失 1 点最大生命值（0.111.0 之前行为）。
-/// 不读取原版 OnPlay 的任何实现细节，游戏更新修改原逻辑不影响。
+/// 打出行为接管：获得能量/抽牌数量读取实例 DynamicVars（升级后自动为 3/3，
+/// 与升级机制同源，卡面与实测一致）；最大生命损失固定为 1（本 mod 唯一改动数值）。
+/// 基础值（2/2/1）由 CanonicalVars 补丁写死，升级增量（+1/+1）由 DynamicVar
+/// UpgradeValueBy 引擎机制记录；这里只做执行，不再把升级状态一并写死。
 /// </summary>
 [HarmonyPatch(typeof(BrightestFlame), "OnPlay")]
 public static class BrightestFlameOnPlayPatch
@@ -28,8 +29,8 @@ public static class BrightestFlameOnPlayPatch
 
     private static async Task HardCodedOnPlay(PlayerChoiceContext choiceContext, BrightestFlame instance)
     {
-        await PlayerCmd.GainEnergy(2m, instance.Owner);
-        await CardPileCmd.Draw(choiceContext, 2m, instance.Owner);
+        await PlayerCmd.GainEnergy(instance.DynamicVars.Energy.IntValue, instance.Owner);
+        await CardPileCmd.Draw(choiceContext, instance.DynamicVars.Cards.BaseValue, instance.Owner);
         await CreatureCmd.LoseMaxHp(choiceContext, instance.Owner.Creature, 1m, isFromCard: true);
     }
 }

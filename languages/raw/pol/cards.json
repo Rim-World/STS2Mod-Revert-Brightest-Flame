@@ -1,0 +1,4 @@
+{
+  "BRIGHTEST_FLAME.description": "Zyskaj {Energy:energyIcons()}.\nDobierz {Cards:diff()} {Cards:plural:kartę|karty|kart}.\nUtrać {MaxHp:diff()} maks. PŻ.",
+  "BRIGHTEST_FLAME.title": "Jasny płomień"
+}

@@ -1,0 +1,4 @@
+{
+  "BRIGHTEST_FLAME.description": "Ottieni {Energy:energyIcons()}.\nPeschi {Cards:diff()} {Cards:plural:carta|carte}.\nRiduci i PV massimi di {MaxHp:diff()}.",
+  "BRIGHTEST_FLAME.title": "Fiamma Sfolgorante"
+}
