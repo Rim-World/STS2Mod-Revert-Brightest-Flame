@@ -4,6 +4,14 @@
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循语义化版本。
 详细的分版本施工记录（含开发人员反馈、失败教训与提交编号）见 `5.ChangeLog/`。
 
+## [1.1.2] - 2026-11-13
+
+### 修复
+
+- 0.113 上打出至亮之焰无效果：`CreatureCmd.LoseMaxHp` 第 4 参由 `bool` 改为 `CardModel?`，原补丁绑定旧签名，首次打出时抛 `MissingMethodException`。
+- 新增运行时重载探测与分派；不支持时交还原版 `OnPlay`，不产生半失效。
+- 清单版本 `1.1.1` → `1.1.2`。
+
 ## [1.1.1] - 2026-09-07
 
 ### 修复

@@ -9,6 +9,7 @@
 | 2026-08-16 | `01-构建产物/RevertBrightestFlame（1.1版本存档）/` | 1.1 | 300 KB（dll 15,360 / json 374 / pck 225,072 / pdb 14,880 B） | v1.1 安装包快照（彻底写死，含 16 语言 pck），含创意工坊上传状态目录 |
 | 2026-11-01 | `02-发布包/RevertBrightestFlame.v1.1.1.zip` | 1.1.1 | 231 KB（236,849 B） | Release `v1.1.1` 安装包：dll + pck + json + pdb，已排除 `.sts2-workshop-uploader/` |
 | 2026-11-01 | `02-发布包/RevertBrightestFlameSourceCode.zip` | 1.1.1 | 144 KB（147,382 B） | Release `v1.1.1` 源码包：C#/Godot 工程 + 16 语言 `cards.json`，已排除 `.godot/`、`bin/`、`obj/` 与 dll/pck/pdb |
+| 2026-11-13 09:17 | `01-构建产物/RevertBrightestFlame（1.1.2版本存档）/` | 1.1.2 | 253 KB（dll 16,896 / pck 225,120 / json 388 / pdb 16,324 B） | 0.113 兼容修复构建：`LoseMaxHp` 运行时探测；同时已覆盖安装到游戏 `mods/RevertBrightestFlame/`；SHA-256 `208da7d2…02a5b3f`（DLL）、`72b73d82…ab69bc28`（PCK） |
 
 ## 产物构成
 

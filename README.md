@@ -4,7 +4,7 @@
 > 并把这张卡的数值、元数据与 16 语言文案整体写死为 0.111.0 之前的表现。
 > Reverts the "Brightest Flame" card in Slay the Spire 2: the Max HP lost per play goes back from 2 to 1 (the pre-0.111 value), with the card's values, metadata and 16-language text hard-coded.
 
-- 当前版本：**1.1.1**
+- 当前版本：**1.1.2**
 - mod id：`RevertBrightestFlame`；作者：再玩小卡组找人弄你
 - 游戏要求：Slay the Spire 2 **0.111.0 及以上**（清单 `min_game_version = "0.111.0"`）
 - 仓库：<https://github.com/Rim-World/STS2Mod-Revert-Brightest-Flame>
@@ -36,7 +36,7 @@
    （`RevertBrightestFlame.pdb` 为可选调试符号）。
 2. 解压到 `<游戏目录>/mods/RevertBrightestFlame/`。
 3. 启动游戏，日志出现 `RevertBrightestFlame: Harmony patches applied` 即生效；
-   mod 列表应显示 1.1.1。
+   mod 列表应显示 1.1.2。
 
 ## 构建
 
@@ -79,6 +79,7 @@ pics/           封面与截图素材
 - 报告：[3.DOCS/001-R-升级收益被吞审阅报告.md](3.DOCS/001-R-升级收益被吞审阅报告.md)
 - 设计：[4.SDD/001-总体设计.md](4.SDD/001-总体设计.md)
 - 版本日志：[5.ChangeLog/001-1.1.1-2026-09-07.md](5.ChangeLog/001-1.1.1-2026-09-07.md)、
+  [5.ChangeLog/002-1.1.2-2026-11-13.md](5.ChangeLog/002-1.1.2-2026-11-13.md)、
   [CHANGELOG.md](CHANGELOG.md)
 - 源码说明：[9.SRC/RevertBrightestFlame/README.md](9.SRC/RevertBrightestFlame/README.md)、
   [9.SRC/RevertBrightestFlame/README.zh.md](9.SRC/RevertBrightestFlame/README.zh.md)
@@ -90,6 +91,7 @@ pics/           封面与截图素材
 | 1.0 | 2026-08-15 | 单补丁 `CanonicalVars` 把最大生命损失改回 1 |
 | 1.1 | 2026-08-16 | 彻底写死：13 个补丁 + 16 语言文案 + 形状守卫 |
 | 1.1.1 | 2026-09-07 | 修复「升级后仍只有 2 能量 / 2 抽」：`OnPlay` 改读 `DynamicVars` |
+| 1.1.2 | 2026-11-13 | 0.113 兼容：`LoseMaxHp` 第 4 参改为运行时探测；不支持的版本交还原版 |
 
 ## 致谢
 

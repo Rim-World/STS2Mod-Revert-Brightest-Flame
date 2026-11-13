@@ -38,7 +38,8 @@ public static class BrightestFlameShapeGuard
                 && AccessTools.PropertyGetter(typeof(CardModel), "ShouldGlowGoldInternal") != null
                 && AccessTools.Method(typeof(BrightestFlame), "OnPlay") != null
                 && AccessTools.Method(typeof(BrightestFlame), "OnUpgrade") != null
-                && AccessTools.PropertyGetter(typeof(BrightestFlame), "ExtraHoverTips") != null;
+                && AccessTools.PropertyGetter(typeof(BrightestFlame), "ExtraHoverTips") != null
+                && CreatureCmdCompat.IsSupported;
         }
         catch
         {

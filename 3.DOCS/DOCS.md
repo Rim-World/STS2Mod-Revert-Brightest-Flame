@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 001 | [001-R-升级收益被吞审阅报告.md](001-R-升级收益被吞审阅报告.md) | R | v1.1.1 审阅报告：升级收益被吞的根因证据链、修复内容、构建部署验证、实机清单与后续建议 |
 | 002 | [002-T-三版本取证与实施笔记.md](002-T-三版本取证与实施笔记.md) | T | 三版本（107/110/111）取证、DynamicVar 机制、`min_game_version` 语义、构建与验证清单；含 v1.1.1 修复记录 |
-| 003 | [003-R-v0.113失效评估.md](003-R-v0.113失效评估.md) | R | v0.113.0 失效评估：`CreatureCmd.LoseMaxHp` 第 4 参由 `bool` 改为 `CardModel?`，mod 的 `OnPlay` 补丁绑定旧签名，打出即抛 `MissingMethodException`；含证据行号与修复方向 |
+| 003 | [003-R-v0.113失效评估.md](003-R-v0.113失效评估.md) | R | v0.113.0 失效评估：`CreatureCmd.LoseMaxHp` 第 4 参由 `bool` 改为 `CardModel?`，mod 的 `OnPlay` 补丁绑定旧签名，打出即抛 `MissingMethodException`；已按报告完成修复（v1.1.2），含证据行号与修复结果 |
 
 ## 另见
 

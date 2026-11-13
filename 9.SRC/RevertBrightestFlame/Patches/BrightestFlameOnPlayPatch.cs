@@ -18,7 +18,7 @@ public static class BrightestFlameOnPlayPatch
 {
     private static bool Prefix(PlayerChoiceContext choiceContext, BrightestFlame __instance, ref Task __result)
     {
-        if (!ModConfig.IsReplaceEnabled)
+        if (!ModConfig.IsReplaceEnabled || !CreatureCmdCompat.IsSupported)
         {
             return true;
         }
@@ -31,6 +31,6 @@ public static class BrightestFlameOnPlayPatch
     {
         await PlayerCmd.GainEnergy(instance.DynamicVars.Energy.IntValue, instance.Owner);
         await CardPileCmd.Draw(choiceContext, instance.DynamicVars.Cards.BaseValue, instance.Owner);
-        await CreatureCmd.LoseMaxHp(choiceContext, instance.Owner.Creature, 1m, isFromCard: true);
+        await CreatureCmdCompat.LoseMaxHp(choiceContext, instance.Owner.Creature, 1m, instance);
     }
 }

@@ -1,7 +1,7 @@
 # 三版本兼容修复：`CreatureCmd.LoseMaxHp` 四参签名
 
 - 日期：2026-11-13
-- 状态：待实施（已按独立审查修订）
+- 状态：已完成（构建、部署、0.113 启动验证；实机效果待用户验收）
 - 目标版本：v1.1.2
 - 关联：`3.DOCS/003-R-v0.113失效评估.md`
 
@@ -121,4 +121,4 @@ await CreatureCmd.LoseMaxHp(choiceContext, instance.Owner.Creature, 1m, isFromCa
 
 | 时间 | 实际施工内容 | 验收状态 |
 |---|---|---|
-| — | — | — |
+| 2026-11-13 09:17 | 新增 `CreatureCmdCompat`；`BrightestFlameOnPlayPatch` 增加 `IsSupported` 守卫并改用兼容层；`BrightestFlameShapeGuard` 加入 `LoseMaxHp` 检查；manifest 1.1.1 → 1.1.2；构建覆盖安装到 `mods/RevertBrightestFlame` | 构建通过；0.113 启动日志显示补丁应用，无异常；实机出牌待用户验收 |
