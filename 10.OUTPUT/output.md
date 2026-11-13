@@ -27,3 +27,6 @@ Release 资产由 `gh release create` 直接从游戏安装目录与源码目录
 
 - `v1.1.1`：<https://github.com/Rim-World/STS2Mod-Revert-Brightest-Flame/releases/tag/v1.1.1>
   （`RevertBrightestFlame.v1.1.1.zip` + `RevertBrightestFlameSourceCode.zip`）
+| 2026-11-13 10:21 | `02-发布包/RevertBrightestFlame.v1.1.2.zip` | 1.1.2 | 233 KB（238,840 B） | GitHub Release v1.1.2 安装包；dll + pck + json + pdb |
+| 2026-11-13 10:21 | `02-发布包/RevertBrightestFlameSourceCode.v1.1.2.zip` | 1.1.2 | 138 KB（141,134 B） | v1.1.2 源码包；排除 `.godot/`、`bin/`、`obj/` 与二进制产物 |
+| 2026-11-13 10:21 | GitHub Release `v1.1.2` | 1.1.2 | 两个资产 | <https://github.com/Rim-World/STS2Mod-Revert-Brightest-Flame/releases/tag/v1.1.2> |
